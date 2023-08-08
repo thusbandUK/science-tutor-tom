@@ -1,0 +1,189 @@
+/*Configuration whole page details eg: html, colour scheme, headings etc*/
+
+html li {
+  list-style-type: none;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--brown);
+}
+
+/* Colour scheme Variables */
+:root {
+   /*40. Appetizing hues https://www.wix.com/blog/website-color-schemes?utm_source=google&utm_medium=cpc&utm_campaign=13774768257^126077909722&experiment_id=^^531699814067^^_DSA&gclid=CjwKCAjw5remBhBiEiwAxL2M9_KoQc568cuiljlWBxVaDEtG7WiNs9Rt6qvzIYnt7bVAWv3QGEEJ_hoCfZIQAvD_BwE#viewer-fld8n*/
+   --lightGrey: rgb(231,226,211);
+   --tan: rgb(251, 188, 150);
+   --red: rgb(237,28,36);
+   --brown: rgb(165,30,34);
+   --black: rgb(0,0,0);
+}
+
+body {
+  background-color: var(--lightGrey);
+}
+
+/*Whole page spacings*/
+.section {
+  margin: 2% 3%;
+}
+
+.testimonial-inner {
+  margin: 2% 10%;
+}
+
+/*Links configuration*/
+
+a {
+  color: var(--brown);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+a:visited {
+  font-style: italic !important;
+}
+
+/*Buttons config*/
+
+.btn {
+  
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--lightGrey);
+    --bs-btn-bg: var(--brown);
+    --bs-btn-border-color: var(--tan);
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: var(--red);
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--red);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: var(--red);
+  
+}
+
+/*Size of text in paragraphs*/
+
+p {
+  font-size: 1.5em;
+}
+
+/*Size of text in featurette paragraphs*/
+
+p.lead {
+  font-size: 1.5em;
+}
+
+/*Size of main heading(s)*/
+
+h1 {
+  font-size: 6rem;
+}
+
+/*Navbar header and footer*/
+
+.navbar-brand {
+  font-family: 'Aldrich', sans-serif;
+}
+
+.navbar {
+     
+  position: static;
+  background-color: var(--black);
+  margin: auto;
+
+ --bs-nav-link-color: var(--red);
+ --bs-navbar-color: var(--lightGrey);    
+ --bs-navbar-hover-color: var(--red);
+ --bs-navbar-disabled-color: #{$navbar-dark-disabled-color};
+ --bs-navbar-active-color: var(--tan);
+ --bs-navbar-brand-color: var(--lightGrey);
+ --bs-navbar-brand-hover-color: var(--red);
+ --bs-navbar-toggler-border-color: var(--lightGrey); 
+ --bs-border-color: var(--pinkText);
+}
+
+/*Testimonials styling*/
+
+.testimonial {
+  background-color: var(--tan);
+  color: var(--brown);
+  font-family: 'Caveat', cursive !important;
+}
+
+/*Styling for test tube bullets*/
+
+.test-tube-icons-list-item-container {
+  display: inline-block;
+}
+
+.test-tube-icon-container {
+  margin: 0% 1%;  
+}
+
+.test-tube-icon {
+  height: 1.2rem;
+  position: relative;
+  top: -5%;
+  width: auto;  
+}
+
+li {
+  list-style-type: none;  
+  font-size: 1.2rem;
+}
+
+/*Media query for larger screens*/
+
+@media screen and (min-width: 992px) {
+  /*Gives decent size margins*/
+  .section {
+    margin: 5% 15%;
+  }
+}
+
+/*Media query for smaller screens*/
+
+@media screen and (max-width: 992px) {
+  /*Flips column direction to make hero feature and fudge feature sequence image and text in correct direction*/
+  #hero-text-row, .fudge-featurette {
+    flex-direction: column-reverse;
+  }
+
+  
+/*Smaller main heading for smaller screens*/
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  /*A trio of settings that eliminate annoying bits of white space on mobile viewings*/
+  .section, .testimonial-inner {
+    margin-top: 0%;
+  }  
+
+  #hero-text-row {
+    padding-right: 0% !important;
+    margin-right: 0% !important;
+  }
+
+  #hero-text-row .col-md-4 {
+    padding-right: 0% !important;
+  }
+}
+
