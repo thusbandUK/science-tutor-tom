@@ -167,11 +167,35 @@ li {
 
 /*Media query for smaller screens*/
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   /*Flips column direction to make hero feature and fudge feature sequence image and text in correct direction*/
   #hero-text-row, .fudge-featurette {
     flex-direction: column-reverse;
   }
+
+  
+
+}
+
+@media screen and (max-width: 992px){
+  #hero-text-row {
+    padding-right: 0% !important;
+    margin-right: 0% !important;
+  }
+
+  #hero-text-row .col-md-6 {
+    padding-right: 0% !important;
+  }
+
+  /*A trio of settings that eliminate annoying bits of white space on mobile viewings*/
+  .section, .testimonial-inner {
+    margin-top: 0%;
+  }  
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
 
   
 /*Smaller main heading for smaller screens*/
@@ -180,18 +204,19 @@ li {
     font-size: 3rem;
   }
 
-  /*A trio of settings that eliminate annoying bits of white space on mobile viewings*/
-  .section, .testimonial-inner {
-    margin-top: 0%;
-  }  
+  
 
-  #hero-text-row {
-    padding-right: 0% !important;
-    margin-right: 0% !important;
+  
+}
+.portrait {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .portrait {
+    display: block;
   }
 
-  #hero-text-row .col-md-4 {
-    padding-right: 0% !important;
+  .landscape {
+    display: none;
   }
 }
-
