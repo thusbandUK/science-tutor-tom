@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="A-level chemistry health check for year 13 students">
+    <meta name="author" content="Tom Husband">
+    <link rel="icon" href="images/icons8-benzene-ring-96.png">
+
+    <title>Science Tutor Tom</title>
+
+    <!--Bootstrap styling link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <!-- Custom styles for this template -->
+    <link href="../styles.css" rel="stylesheet">    
+
+    <!--Aldrich, Roboto and Caveat Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Caveat&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!--Meta data-->
+    <!--
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org/",
+        "@type": "Tutoring",
+        "name": "Tom Husband",
+        "url": "https://sciencetutortom.com",
+        "image": "https://sciencetutortom.com/images/portrait-of-me.jpg",
+        "description": "Engaging and affordable online tutoring for A-level chemistry and GCSE science."      
+        "email": "thsciencetutor@gmail.com",
+        "memberOf": "Royal Society of Chemistry"      
+      }
+    </script>
+-->
+<!--OG meta data for FB / insta-->
+    <meta property="og:title" content="A-level chemistry health check">
+    <meta property="og:url" content="https://sciencetutortom.com/resources/y13-health-check.html" />
+    <meta property="og:description" content="A quiz to help year 13 students check their understanding of year 12 concepts" />
+    <meta property="og:image" content="https://sciencetutortom.com/images/resources/health-check.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="fb:page_id" content="114457788407704" />
+    
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async  data-cookie-consent="tracking" src="https://www.googletagmanager.com/gtag/js?id=G-LDTM2YK9QS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LDTM2YK9QS');
+</script>
+  <body>
+  <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary", "functionality", "tracking"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Science Tutor Tom","website_privacy_policy_url":"https://sciencetutortom.com/privacy"});
+});
+</script>
+  
+    <!--Navbar-->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid  d-flex justify-content-between">
+        <a class="navbar-brand" href="#">Science Tutor Tom</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav  ms-auto nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#credentials">Credentials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#approach">Approach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#demo">Demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#publications">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#inquiries">Inquiries</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg></a>              
+            </li>   
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+
+<!--id="about-me-heading-mobile"-->
+<div class="section">
+    
+<div class="text-box" >
+  <h1 class="text-center text-wrap w-75 m-auto mt-0">A-level chemistry health check for year 13 students
+  </h1>
+</div>
+
+<div class="row featurette" id="booking-container">     
+    <div>
+     <form action="/thanks.html" name="Contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" content-Type="application/x-www-form-urlencoded">
+        <!--Question 1 begins with question-->
+        <div class="form-group my-5">
+          <h2>Question 1</h2>
+          <p>This question is about ionic bonding. Select all the correct statements.</p>
+          <p>Ionic bonding...</p>
+                
+        
+        <!--Question 1 options-->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q1-option1" name="Q1-selected">
+            <label class="form-check-label" for="Q1-option1">
+              ...is the process that occurs when atoms of a metal each donate one or more electrons to atoms of a non-metal.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q1-option2" name="Q1-selected">
+            <label class="form-check-label" for="Q1-option2">
+              ...can occur between ions composed completely of non-metals.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q1-option3" name="Q1-selected">
+            <label class="form-check-label" for="Q1-option3">
+              ...is the electrostatic attraction between oppositely charged ions.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q1-option4" name="Q1-selected">
+            <label class="form-check-label" for="Q1-option4">
+              ...always produces a giant lattice structure.
+            </label>
+          </div>
+        </div>
+          <!--Question 1 ends-->
+
+          <!--Question 2 begins with question-->
+          <div class="form-group my-5">
+            <h2>Question 2</h2>
+            <p>This question is about the dynamic equilibrium that is established during the Haber Process. Select one answer. </p>
+            <p>N<sub>2(g)</sub> + 3H<sub>2(g)</sub> &#8651; 2NH<sub>3(g)</sub>             &#916;H = −92.4 kJmol<sup>-1</sup></p> 
+            <p>When the equilibrium mixture is heated, it...</p>
+            
+            <!--Question 2 options-->
+          
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q2-selected" id="Q2-option1">
+            <label class="form-check-label" for="Q2-option1">
+              ...shifts in the exothermic direction, towards the reactants.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q2-selected" id="Q2-option2">
+            <label class="form-check-label" for="Q2-option2">
+              ...shifts in the endothermic direction, towards the products.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q2-selected" id="Q2-option3">
+            <label class="form-check-label" for="Q2-option3">
+              ...shifts in the exothermic direction, towards the reactants.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q2-selected" id="Q2-option4">
+            <label class="form-check-label" for="Q2-option4">
+              ...shifts in the endothermic direction, towards the products.
+            </label>
+          </div>
+
+          </div>
+          <!--Question 2 ends-->
+       
+          <!--Question 3 begins with question-->
+          <div class="form-group my-5">
+            <h2>Question 3</h2>
+            <p>This question is about the the electrophilic addition reaction mechanism. Select the option that shows the correct
+              first step for the reaction between ethene and hydrogen bromide. </p>
+            
+            <!--Question 3 options-->
+          
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q3-selected" id="Q3-option1">
+            <label class="form-check-label" for="Q3-option1">
+              <div class="img-fluid">
+                <img src="../images/test-tube-icons/burnt-orange-test-tube.png">
+              </div>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q3-selected" id="Q3-option2">
+            <label class="form-check-label" for="Q3-option2">
+              <div class="img-fluid">
+                <img src="../images/test-tube-icons/burnt-orange-test-tube.png">
+              </div>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q3-selected" id="Q3-option3">
+            <label class="form-check-label" for="Q3-option3">
+              <div class="img-fluid">
+                <img src="../images/test-tube-icons/burnt-orange-test-tube.png">
+              </div>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q3-selected" id="Q3-option4">
+            <label class="form-check-label" for="Q3-option4">
+              <div class="img-fluid">
+                <img src="../images/test-tube-icons/burnt-orange-test-tube.png">
+              </div>
+            </label>
+          </div>
+
+          </div>
+          <!--Question 3 ends-->
+
+          <!--Question 4 begins with question-->
+          <div class="form-group my-5">
+            <h2>Question 4</h2>
+            <p>[REPLACE THIS TEXT WITH HESS CYCLE QUESTIONS]</p>
+            <p>This question is about the dynamic equilibrium that is established during the Haber Process. Select one answer. </p>
+            <p>N<sub>2(g)</sub> + 3H<sub>2(g)</sub> &#8651; 2NH<sub>3(g)</sub>             &#916;H = −92.4 kJmol<sup>-1</sup></p> 
+            <p>When the equilibrium mixture is heated, it...</p>
+            
+          <!--Question 4 options-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q4-selected" id="Q4-option1">
+            <label class="form-check-label" for="Q4-option1">
+              [REPLACE THIS TEXT WITH HESS CYCLE OPTION]
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q4-selected" id="Q4-option2">
+            <label class="form-check-label" for="Q4-option2">
+              [REPLACE THIS TEXT WITH HESS CYCLE OPTION]
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q4-selected" id="Q4-option3">
+            <label class="form-check-label" for="Q4-option3">
+              [REPLACE THIS TEXT WITH HESS CYCLE OPTION]
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q4-selected" id="Q4-option4">
+            <label class="form-check-label" for="Q4-option4">
+              [REPLACE THIS TEXT WITH HESS CYCLE OPTION]
+            </label>
+          </div>
+
+          </div>
+          <!--Question 4 ends-->
+
+          <!--Question 5 begins with question-->
+        <div class="form-group my-5">
+          <h2>Question 5</h2>
+          <p>A student is comparing the boiling points of ethanol, ethanal and ethanoic acid, trying to decide which boils at
+            the highest temperature and which at the lowest. They write the following notes. Tick all of the statements that
+            are correct.
+          </p>
+          
+          <p>[INSERT IMAGES OF ETHANOL, ETHANAL AND ETHANOIC ACID]</p>
+          
+                
+        
+        <!--Question 5 options-->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q5-option1" name="Q5-selected">
+            <label class="form-check-label" for="Q5-option1">
+              Ethanoic acid has a double C=O bond which increases the boiling point because it takes more energy to break.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q5-option2" name="Q5-selected">
+            <label class="form-check-label" for="Q5-option2">
+              Ethanal has the weakest Van der Waals forces.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q5-option3" name="Q5-selected">
+            <label class="form-check-label" for="Q5-option3">
+              Molecules of all three compounds experience hydrogen bonding.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q5-option4" name="Q5-selected">
+            <label class="form-check-label" for="Q5-option4">
+              Molecules of ethanoic acid experience permanent dipole permanent dipole interactions, which increase its boiling point.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q5-option5" name="Q5-selected">
+            <label class="form-check-label" for="Q5-option5">
+              The covalent O−H bond in ethanol is a hydrogen bond.
+            </label>
+          </div>
+        </div>
+          <!--Question 5 ends-->
+
+          <!--Question 6 begins with question-->
+          <div class="form-group my-5">
+            <h2>Question 6</h2>
+            <p>This question is about redox reactions. Select the correct statement.</p>
+            
+            <p>2MnO<sub>4</sub><sup>−</sup><sub>(aq)</sub> + 5H<sub>2</sub>O<sub>2(aq)</sub> + 6H<sup>+</sup><sub>(aq)</sub> &#8594; 2Mn<sup>2+</sup><sub>(aq)</sub> + 5O<sub>2(g)</sub> + 8H<sub>2</sub>O<sub>(l))</sub>   </p> 
+            <p>MnO<sub>4</sub><sup>−</sup> is...</p>
+            
+          <!--Question 6 options-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q6-selected" id="Q6-option1">
+            <label class="form-check-label" for="Q6-option1">
+              ...the oxidising agent because it gains electrons.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q6-selected" id="Q6-option2">
+            <label class="form-check-label" for="Q6-option2">
+              ...the oxidising agent because it donates electrons.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q6-selected" id="Q6-option3">
+            <label class="form-check-label" for="Q6-option3">
+              ...the reducing agent because it gains electrons.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q6-selected" id="Q6-option4">
+            <label class="form-check-label" for="Q6-option4">
+              ...the reducing agent because it donates electrons.
+            </label>
+          </div>
+
+          </div>
+          <!--Question 6 ends-->
+
+          <!--Question 7 begins with question-->
+        <div class="form-group my-5">
+          <h2>Question 7</h2>
+          <p>This question is about silicon dioxide. Tick all the correct statements. SiO<sub>2</sub> has a high melting because... 
+          </p>
+          
+                
+        
+        <!--Question 7 options-->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q7-option1" name="Q7-selected">
+            <label class="form-check-label" for="Q7-option1">
+              ...it has strong intermolecular forces.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q7-option2" name="Q7-selected">
+            <label class="form-check-label" for="Q7-option2">
+              ...its atoms have full outer shells.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q7-option3" name="Q7-selected">
+            <label class="form-check-label" for="Q7-option3">
+              ...it has strong forces of attraction between shared pairs of electrons and positive nuclei.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q7-option4" name="Q7-selected">
+            <label class="form-check-label" for="Q7-option4">
+              ...it has a giant lattice structure.
+            </label>
+          </div>
+          
+        </div>
+          <!--Question 7 ends-->
+
+          <!--Question 8 begins with question-->
+          <div class="form-group my-5">
+            <h2>Question 8</h2>
+            <p>This question is about reactions of alcohols. The diagram shows the display formula of butan-1,3-diol. The compound 
+              is refluxed with excess acidified potassium dichromate. Select the main product.
+            </p>
+            
+            <p>INSERT DIAGRAM OF BUTAN-1,3-DIOL</p>
+            
+          <!--Question 8 options-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q8-selected" id="Q8-option1">
+            <label class="form-check-label" for="Q8-option1">
+              CH<sub>3</sub>CH(OH)CH<sub>2</sub>CHO
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q8-selected" id="Q8-option2">
+            <label class="form-check-label" for="Q8-option2">
+              CH<sub>3</sub>CH(OH)CH<sub>2</sub>COOH
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q8-selected" id="Q8-option3">
+            <label class="form-check-label" for="Q8-option3">
+              CH<sub>3</sub>COCH<sub>2</sub>CHO
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q8-selected" id="Q8-option4">
+            <label class="form-check-label" for="Q8-option4">
+              CH<sub>3</sub>COCH<sub>2</sub>COOH
+            </label>
+          </div>
+
+          </div>
+          <!--Question 8 ends-->
+
+          <!--Question 9 begins with question-->
+        <div class="form-group my-5">
+          <h2>Question 9</h2>
+          <p>This question is about polar molecules. Tick all the statements that correctly describe the compounds shown in the diagrams.
+          </p>
+          <p>[INSERT IMAGES OF CH4, CCL2F2, CF4]</p>
+                
+        
+        <!--Question 9 options-->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q9-option1" name="Q9-selected">
+            <label class="form-check-label" for="Q9-option1">
+              Molecules B and C contain polar bonds.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q9-option2" name="Q9-selected">
+            <label class="form-check-label" for="Q9-option2">
+              In C the dipoles cancel out.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q9-option3" name="Q9-selected">
+            <label class="form-check-label" for="Q9-option3">
+              A is non-polar.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q9-option4" name="Q9-selected">
+            <label class="form-check-label" for="Q9-option4">
+              Molecules B and C are polar.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q9-option5" name="Q9-selected">
+            <label class="form-check-label" for="Q9-option5">
+              The C−Cl bond is polar because chlorine is significantly more electronegative than carbon.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Q9-option6" name="Q9-selected">
+            <label class="form-check-label" for="Q9-option6">
+              All three molecules are asymmetrical.
+            </label>
+          </div>
+          
+        </div>
+          <!--Question 9 ends-->
+
+          <!--Question 10 begins with question-->
+          <div class="form-group my-5">
+            <h2>Question 10</h2>
+            <p>This question is about titration. [INSERT ACID BASE TITRATION QUESTION]
+            
+          <!--Question 10 options-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option1">
+            <label class="form-check-label" for="Q10-option1">
+              [INSERT ANSWER WHICH OVERLOOKS STOICHIOMETRY]
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option2">
+            <label class="form-check-label" for="Q10-option2">
+              [INSERT ANSWER WHICH PUTS WRONG SOLUTION IN BURETTE]
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option3">
+            <label class="form-check-label" for="Q10-option3">
+              [INSERT CORRECT ANSWER]
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option4">
+            <label class="form-check-label" for="Q10-option4">
+              [INSERT ANSWER WHICH OVERLOOKS OVERLOOKS THE NEED TO SCALE UP]
+            </label>
+          </div>
+
+          </div>
+          <!--Question 10 ends-->
+
+          <!--Question 11 begins with question-->
+          <div class="form-group my-5">
+            <h2>Question 11</h2>
+            <p>This question is about naming organic compounds. Select the correct name for the compound shown in the diagram.</p>
+            <p>[INSERT IMAGE OF 2,4-DIMETHYLHEXANE]</p>
+            
+          <!--Question 11 options-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option1">
+            <label class="form-check-label" for="Q10-option1">
+              2-methyl-4-ethylpentane
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option2">
+            <label class="form-check-label" for="Q10-option2">
+              2-ethyl-4-methylpentane
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option3">
+            <label class="form-check-label" for="Q10-option3">
+              2,4-dimethylhexane
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option4">
+            <label class="form-check-label" for="Q10-option4">
+              3,5-dimethylhexane
+            </label>
+          </div>
+
+          </div>
+          <!--Question 11 ends-->
+
+        <div class="form-group my-1">
+         <label for="name">Name</label>
+         <input type="name" class="form-control" id="name" placeholder="Name" name="name">
+       </div>
+       <div class="form-group my-1">
+         <label for="email">Email address</label>
+         <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+       </div>
+       <!-- So what this is is a working regex expression that validates postcodes (more or less). Not sure whether or not to use
+       <div class="form-group my-1">hello
+         <label for="postcode">Postcode</label>
+         <input type="postcode" class="form-control" id="email" placeholder="Enter postcode" name="postcode" required pattern="^(([A-Z][0-9]{1,2})|(([A-Z][A-HJ-Y][0-9]{1,2})|(([A-Z][0-9][A-Z])|([A-Z][A-HJ-Y][0-9]?[A-Z])))) [0-9][A-Z]{2}$">
+         <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>--><!--
+       </div>
+     -->
+       
+       <div class="form-group my-1">
+         <label for="inquiry">Your inquiry. Feel free to include time(s) you would like tutoring</label>
+         <textarea class="form-control" id="inquiry" rows="3" name="inquiry"></textarea>
+       </div>
+       <div class="w-100" data-netlify-recaptcha="true"></div>
+       <button type="submit" class="btn btn-lg btn-default">Submit</button>
+     </form>
+    </div>
+ </div>
+
+
+<!--Section ending div below-->
+</div>
+
+</main>
+
+<!--footer navbar-->
+<footer>
+<nav class="navbar sticky-bottom navbar-expand-lg navbar-dark bg-dark mb-0">
+  <div class="container-fluid  d-flex justify-content-between">
+    <a class="navbar-brand" href="#">Science Tutor Tom</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav  ms-auto nav">  
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="open_preferences_center">Cookies</a>
+        </li>      
+        <li class="nav-item">
+          <a class="nav-link" href="../privacy.html">Privacy</a>
+        </li>
+        <!--Linked In icon and link-->
+        <li class="nav-item ">
+          <a class="nav-link " href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg></a>              
+        </li>   
+        <!--Facebook icon and link-->
+        <li class="nav-item ">
+          <a class="nav-link " target="_blank" href="https://www.facebook.com/profile.php?id=100095426717427"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg></a>              
+        </li> 
+        <!--Instagram icon and link-->
+        <li class="nav-item ">
+          <a class="nav-link " target="_blank" href="https://www.instagram.com/sciencetutortom/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg></a>              
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+</footer>     
+
+<!--Bootstrap Javascript-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
