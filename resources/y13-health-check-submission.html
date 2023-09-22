@@ -630,7 +630,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
         function disableChecksAndRadios(){
 
     Object.keys(selectedAnswers).forEach((x) => {
-        options.forEach((y) => {
+        [1,2,3,4,5,6].forEach((y) => {
             var element = document.getElementById(`Q${x}-option${y}`);
             if (!element){
                 return;
