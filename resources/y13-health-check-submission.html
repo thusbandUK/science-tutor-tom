@@ -627,10 +627,28 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
        
         const selectedAnswers = JSON.parse(localStorage.harvestedData);
 
+        function disableChecksAndRadios(){
+
+    Object.keys(selectedAnswers).forEach((x) => {
+        options.forEach((y) => {
+            var element = document.getElementById(`Q${x}-option${y}`);
+            if (!element){
+                return;
+            }
+            return element.setAttribute("disabled", "true") ;
+        })
+        return;
+
+    })
+
+}
+
+disableChecksAndRadios()
+
 function checkBox(id) {
 
 
-    console.log(id);
+    //console.log(id);
 
     var x = document.getElementById(id);
     //alert(x.getAttribute("disabled"));
