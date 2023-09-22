@@ -554,26 +554,26 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
             
           <!--Question 11 options-->
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option1">
-            <label class="form-check-label" for="Q10-option1">
+            <input class="form-check-input" type="radio" name="Q11-selected" id="Q11-option1">
+            <label class="form-check-label" for="Q11-option1">
               2-methyl-4-ethylpentane
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option2">
-            <label class="form-check-label" for="Q10-option2">
+            <input class="form-check-input" type="radio" name="Q11-selected" id="Q11-option2">
+            <label class="form-check-label" for="Q11-option2">
               2-ethyl-4-methylpentane
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option3">
-            <label class="form-check-label" for="Q10-option3">
+            <input class="form-check-input" type="radio" name="Q11-selected" id="Q11-option3">
+            <label class="form-check-label" for="Q11-option3">
               2,4-dimethylhexane
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option4">
-            <label class="form-check-label" for="Q10-option4">
+            <input class="form-check-input" type="radio" name="Q11-selected" id="Q11-option4">
+            <label class="form-check-label" for="Q11-option4">
               3,5-dimethylhexane
             </label>
           </div>
@@ -613,6 +613,8 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
 <!--Section ending div below-->
 </div>
+
+
 
 </main>
 
@@ -659,7 +661,49 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 <!--Bootstrap Javascript-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
       <script>
-        const form = document.getElementById("form");
+
+console.log("We've got the new imported function now");
+
+const arrayRadio = [2,3,4,6,8,10,11];
+//const arrayRadio = [2];
+const arrayCheck = [1,5,7,9];
+//const arrayCheck = [1];
+
+let object = {1: "I actually don't care about numbers", 2: "", 3: "", 4: "", 5: "I actually don't care about numbers"};
+
+const radioHarvest = (inputArray) => {
+    inputArray.forEach((x) => {
+        var selectedRadio = document.querySelectorAll(`input[name=Q${x}-selected]:checked`);
+        return object[x] = selectedRadio;
+    })
+}
+
+const checkHarvest = (inputArray) => {
+    inputArray.forEach((y) => {
+        var selectedCheck = document.querySelectorAll(`input[name=Q${y}-selected]:checked`);
+        return object[y] = selectedCheck;
+    })
+}
+
+radioHarvest(arrayRadio);
+checkHarvest(arrayCheck);
+console.log(object);
+
+const objectBuilder = (inputArray) => {
+    inputArray.forEach((x) => {
+        return object[x] = `I am number ${x.toString()}`;
+
+    })
+
+}
+
+console.log(object);
+
+objectBuilder(arrayRadio);
+
+localStorage.setItem(object);
+
+        /*const form = document.getElementById("form");
         const submitter = document.querySelector("button[value=form-submit]");
         const formData = new FormData(form, submitter);
         const output = document.getElementById("output");
@@ -669,12 +713,13 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
   output.textContent += `${key}: ${value}\n`;
 }
 
-        console.log('local storage experiment with new formOutput experiment');
+console.log(output);
+        /*console.log('local storage experiment with new formOutput experiment');
        addEventListener("submit", (event) => {
         const formData = new FormData();
         localStorage.setItem("formOutput", output);
         
-       });
+       });*/
 
       </script>
   </body>
