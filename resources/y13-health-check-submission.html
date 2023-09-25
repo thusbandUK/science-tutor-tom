@@ -826,6 +826,22 @@ function recheckSelectedAnswers(object){
 
 recheckSelectedAnswers(selectedAnswers);
 
+//This is an object composed of the correct answers for comparision
+
+const correctAnswers = {
+    1: ['Q1-option2', 'Q1-option3', 'Q1-option4'], //correct
+    2: 'Q2-option4', //correct
+    3: 'Q3-option4', //correct
+    4: 'Q4-option2', //correct
+    5: ['Q5-option2', 'Q5-option4'], //correct
+    6: 'Q6-option1', //correct
+    7: ['Q7-option3', 'Q7-option4'], //correct
+    8: 'Q8-option4',  //correct
+    9: ['Q9-option1', 'Q9-option2', 'Q9-option3', 'Q9-option5'], //correct
+    10: 'Q10-option1',  //correct
+    11: 'Q11-option3' //correct
+};
+
 //This function, used by the one below, puts a red box around incorrect answers and a yellow box around correct answers
 
 function decoration(id, boolean){
@@ -871,7 +887,7 @@ function checkAnswers(selectedAnswers){
         }        
     }
 
-
+    checkAnswers(selectedAnswers);
 
       </script>
   </body>
