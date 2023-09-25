@@ -1,3 +1,7 @@
+you need to give each question-containing div an id of the form id="question-x" - make sure it matches the id passed to 
+decoration function in terms of lower / upper case q and the use of a dash, then restore the code in decoration function 
+that decorates
+
 Okay, so when you've finished all the question content in the health check page you then need to copy that over to the submission
 accepted page - BUT DON'T MESS WITH THE JAVASCRIPT CODE 
 
@@ -7,6 +11,12 @@ you also need to review the metadata for both
 
 so yeah, yellow box if they got it right red if wrong, which you can tell by comparing the local storage object to the correctAnswer
 object, key value by key value
+
+
+
+
+
+done 
 
 and you need to adjust the code so that the netlify submission actually gets the data 
 

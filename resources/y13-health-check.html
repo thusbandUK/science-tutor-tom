@@ -118,7 +118,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
       <!-- -->
      <form id="form" name="y13-health-check" method="POST" action="/resources/y13-health-check-submission.html" data-netlify="true" data-netlify-recaptcha="true" content-Type="application/x-www-form-urlencoded">
         <!--Question 1 begins with question-->
-        <div class="form-group my-5">
+        <div class="form-group my-5" id="question-1">
           
           <h2>Question 1</h2>
           <fieldset name="question-1">
@@ -162,7 +162,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 1 ends-->
 
           <!--Question 2 begins with question-->
-          <div class="form-group my-5">
+          <div class="form-group my-5" id="question-2">
             <h2>Question 2</h2>
             <fieldset name="question-2">
             <legend>This question is about the dynamic equilibrium that is established during the Haber Process. Select one answer. </legend>
@@ -205,7 +205,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 2 ends-->
        
           <!--Question 3 begins with question-->
-          <div class="form-group my-5">
+          <div class="form-group my-5" id="question-3">
             <h2>Question 3</h2>
             <Fieldset name="question-3">
             <legend>This question is about the the electrophilic addition reaction mechanism. Select the option that shows the correct
@@ -255,7 +255,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 3 ends-->
 
           <!--Question 4 begins with question-->
-          <div class="form-group my-5">
+          <div class="form-group my-5" id="question-4">
             <h2>Question 4</h2>
             <fieldset name="question-4">
             <legend class="mb-5">This question is about enthalpy changes. Use the data provided to calculate the standard 
@@ -324,7 +324,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 4 ends-->
 
           <!--Question 5 begins with question-->
-        <div class="form-group my-5">
+        <div class="form-group my-5" id="question-5">
           <h2>Question 5</h2>
           <fieldset name="question-5">
           <legend>A student is comparing the boiling points of ethanol, ethanal and ethanoic acid, trying to decide which boils at
@@ -396,7 +396,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 5 ends-->
 
           <!--Question 6 begins with question-->
-          <div class="form-group my-5">
+          <div class="form-group my-5" id="question-6">
             <h2>Question 6</h2>
             <fieldset name="question-6">
             <legend>This question is about redox reactions. Select the correct statement.</legend>
@@ -439,7 +439,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 6 ends-->
 
           <!--Question 7 begins with question-->
-        <div class="form-group my-5">
+        <div class="form-group my-5" id="question-7">
           <h2>Question 7</h2>
           <fieldset name="question-7">
           <legend>This question is about silicon dioxide. Tick all the correct statements. SiO<sub>2</sub> has a high melting because... 
@@ -482,7 +482,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 7 ends-->
 
           <!--Question 8 begins with question-->
-          <div class="form-group my-5">
+          <div class="form-group my-5" id="question-8">
             <h2>Question 8</h2>
             <fieldset name="question-8">
             <legend>This question is about reactions of alcohols. The diagram shows the display formula of butan-1,3-diol. The compound 
@@ -528,7 +528,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 8 ends-->
 
           <!--Question 9 begins with question-->
-        <div class="form-group my-5">
+        <div class="form-group my-5" id="question-9">
           <h2>Question 9</h2>
           <fieldset name="question-9">
           <legend>This question is about polar molecules. Tick all the statements that correctly describe the compounds shown in the diagrams.
@@ -604,7 +604,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 9 ends-->
 
           <!--Question 10 begins with question-->
-          <div class="form-group my-5">
+          <div class="form-group my-5" id="question-10">
             <h2>Question 10</h2>
             <fieldset name="question-10">
             <legend>This question is about titration. A student prepared 250 cm<sup>3</sup> of a solution of NaOH. The student fills a burette 
@@ -649,7 +649,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 10 ends-->
 
           <!--Question 11 begins with question-->
-          <div class="form-group my-5">
+          <div class="form-group my-5" id="question-11">
             <h2>Question 11</h2>
             <fieldset name="question-11">
             <legend>This question is about naming organic compounds. Select the correct name for the compound shown in the diagram.</legend>
@@ -772,7 +772,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
       <script>
 
-console.log("all references to style omitted");
+console.log("hopefully styling now thanks to addition of ID");
 /*
 const arrayRadio = [2,3,4,6,8,10,11];
 //const arrayRadio = [2];
