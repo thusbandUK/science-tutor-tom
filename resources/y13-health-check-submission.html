@@ -117,74 +117,90 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
     <div>
      <form action="/thanks.html" name="Contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" content-Type="application/x-www-form-urlencoded">
         <!--Question 1 begins with question-->
-        <div class="form-group my-5" id="question-1">
+        
+        <!--Question 1 begins with question-->
+        <div class="form-group my-5">
           
           <h2>Question 1</h2>
-          <p>This question is about ionic bonding. Select all the correct statements.</p>
-          <p>Ionic bonding...</p>
-                
+          <fieldset name="question-1">
+
+          <legend>This question is about ionic bonding. Select all the correct statements.</legend>
+          
+          <p>Ionic bonding...</p>          
         
         <!--Question 1 options-->
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q1-option1" name="Q1-selected">
-            <label class="form-check-label" for="Q1-option1">
+            <!--For tags removed from labels for="Q1-option1"-->
+            <label class="form-check-label" >
+              <input class="form-check-input" type="checkbox" value="...is the process that occurs when atoms of a metal each donate one or more electrons to atoms of a non-metal." id="Q1-option1" name="question-1" />
               ...is the process that occurs when atoms of a metal each donate one or more electrons to atoms of a non-metal.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q1-option2" name="Q1-selected">
-            <label class="form-check-label" for="Q1-option2">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="...can occur between ions composed completely of non-metals." id="Q1-option2"  name="question-1" />
               ...can occur between ions composed completely of non-metals.
+              
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q1-option3" name="Q1-selected">
-            <label class="form-check-label" for="Q1-option3">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="...is the electrostatic attraction between oppositely charged ions." id="Q1-option3" name="question-1" />
               ...is the electrostatic attraction between oppositely charged ions.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q1-option4" name="Q1-selected">
-            <label class="form-check-label" for="Q1-option4">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="...always produces a giant lattice structure." id="Q1-option4" name="question-1" />
               ...always produces a giant lattice structure.
             </label>
           </div>
+        </fieldset>
         </div>
           <!--Question 1 ends-->
 
           <!--Question 2 begins with question-->
           <div class="form-group my-5">
             <h2>Question 2</h2>
-            <p>This question is about the dynamic equilibrium that is established during the Haber Process. Select one answer. </p>
+            <fieldset name="question-2">
+            <legend>This question is about the dynamic equilibrium that is established during the Haber Process. Select one answer. </legend>
             <p>N<sub>2(g)</sub> + 3H<sub>2(g)</sub> &#8651; 2NH<sub>3(g)</sub>             &#916;H = −92.4 kJmol<sup>-1</sup></p> 
             <p>When the equilibrium mixture is heated, it...</p>
             
             <!--Question 2 options-->
           
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q2-selected" id="Q2-option1">
-            <label class="form-check-label" for="Q2-option1">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="shifts in the exothermic direction, towards the reactants" name="question-2" id="Q2-option1">
               ...shifts in the exothermic direction, towards the reactants.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q2-selected" id="Q2-option2">
-            <label class="form-check-label" for="Q2-option2">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="shifts in the endothermic direction, towards the products" name="question-2" id="Q2-option2">
               ...shifts in the endothermic direction, towards the products.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q2-selected" id="Q2-option3">
-            <label class="form-check-label" for="Q2-option3">
-              ...shifts in the exothermic direction, towards the reactants.
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="shifts in the exothermic direction, towards the products" name="question-2" id="Q2-option3">
+              ...shifts in the exothermic direction, towards the products.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q2-selected" id="Q2-option4">
-            <label class="form-check-label" for="Q2-option4">
-              ...shifts in the endothermic direction, towards the products.
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="shifts in the endothermic direction, towards the reactants" name="question-2" id="Q2-option4">
+              ...shifts in the endothermic direction, towards the reactants.
             </label>
           </div>
+        </fieldset>
 
           </div>
           <!--Question 2 ends-->
@@ -192,43 +208,49 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 3 begins with question-->
           <div class="form-group my-5">
             <h2>Question 3</h2>
-            <p>This question is about the the electrophilic addition reaction mechanism. Select the option that shows the correct
-              first step for the reaction between ethene and hydrogen bromide. </p>
+            <Fieldset name="question-3">
+            <legend>This question is about the the electrophilic addition reaction mechanism. Select the option that shows the correct
+              first step for the reaction between ethene and hydrogen bromide. </legend>
             
             <!--Question 3 options-->
           
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q3-selected" id="Q3-option1">
-            <label class="form-check-label" for="Q3-option1">
+          <div class="mt-5 form-check">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="option A - incorrect" name="question-3" id="Q3-option1">
               <div class="img-fluid">
-                <img src="../images/test-tube-icons/burnt-orange-test-tube.png">
+                <img class="w-50" src="../images/resources/y13-health-check/q3-image-A.png">
               </div>
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q3-selected" id="Q3-option2">
-            <label class="form-check-label" for="Q3-option2">
+          <div class="mt-5 form-check">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="option B - incorrect" name="question-3" id="Q3-option2">
               <div class="img-fluid">
-                <img src="../images/test-tube-icons/burnt-orange-test-tube.png">
+                <img class="w-50" src="../images/resources/y13-health-check/q3-image-B.png">
               </div>
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q3-selected" id="Q3-option3">
-            <label class="form-check-label" for="Q3-option3">
+          <div class="mt-5 form-check">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="option C - incorrect" name="question-3" id="Q3-option3">
               <div class="img-fluid">
-                <img src="../images/test-tube-icons/burnt-orange-test-tube.png">
+                <img class="w-50" src="../images/resources/y13-health-check/q3-image-C.png">
               </div>
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q3-selected" id="Q3-option4">
-            <label class="form-check-label" for="Q3-option4">
+          <div class="mt-5 form-check">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="option D - correct" name="question-3" id="Q3-option4">
               <div class="img-fluid">
-                <img src="../images/test-tube-icons/burnt-orange-test-tube.png">
+                <img class="w-50" src="../images/resources/y13-health-check/q3-image-D.png">
               </div>
             </label>
           </div>
+        </Fieldset>
 
           </div>
           <!--Question 3 ends-->
@@ -236,36 +258,68 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 4 begins with question-->
           <div class="form-group my-5">
             <h2>Question 4</h2>
-            <p>[REPLACE THIS TEXT WITH HESS CYCLE QUESTIONS]</p>
-            <p>This question is about the dynamic equilibrium that is established during the Haber Process. Select one answer. </p>
-            <p>N<sub>2(g)</sub> + 3H<sub>2(g)</sub> &#8651; 2NH<sub>3(g)</sub>             &#916;H = −92.4 kJmol<sup>-1</sup></p> 
-            <p>When the equilibrium mixture is heated, it...</p>
+            <fieldset name="question-4">
+            <legend class="mb-5">This question is about enthalpy changes. Use the data provided to calculate the standard 
+              enthalpy of formation of ethane, C<sub>2</sub>H<sub>6</sub>.</legend>
+            
+
+            <!--table code-->
+            <table class="mb-5 table  table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Substance</th>
+                  <th scope="col">&#916;<sub>c</sub>H / kJmol<sup>-1</sup></th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">C<sub>(s)</sub></th>
+                  <td>–393.5</td>                  
+                </tr>
+                <tr>
+                  <th scope="row">H<sub>2(g)</sub></th>
+                  <td>–285.9</td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">C<sub>2</sub>H<sub>6(g)</sub></th>
+                  <td>–1559.8</td>
+                  
+                </tr>
+              </tbody>
+            </table>
             
           <!--Question 4 options-->
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q4-selected" id="Q4-option1">
-            <label class="form-check-label" for="Q4-option1">
-              [REPLACE THIS TEXT WITH HESS CYCLE OPTION]
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="[REPLACE THIS TEXT WITH HESS CYCLE OPTION]" name="question-4" id="Q4-option1">
+              +84.9 kJmol<sup>-1</sup> 
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q4-selected" id="Q4-option2">
-            <label class="form-check-label" for="Q4-option2">
-              [REPLACE THIS TEXT WITH HESS CYCLE OPTION]
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="[REPLACE THIS TEXT WITH HESS CYCLE OPTION]" name="question-4" id="Q4-option2">
+              –84.9kJmol<sup>-1</sup> 
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q4-selected" id="Q4-option3">
-            <label class="form-check-label" for="Q4-option3">
-              [REPLACE THIS TEXT WITH HESS CYCLE OPTION]
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="[REPLACE THIS TEXT WITH HESS CYCLE OPTION]" name="question-4" id="Q4-option3">
+              +880.4kJmol<sup>-1</sup> 
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q4-selected" id="Q4-option4">
-            <label class="form-check-label" for="Q4-option4">
-              [REPLACE THIS TEXT WITH HESS CYCLE OPTION]
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="[REPLACE THIS TEXT WITH HESS CYCLE OPTION]" name="question-4" id="Q4-option4">
+              –880.4kJmol<sup>-1</sup> 
             </label>
           </div>
+        </fieldset>
 
           </div>
           <!--Question 4 ends-->
@@ -273,82 +327,114 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 5 begins with question-->
         <div class="form-group my-5">
           <h2>Question 5</h2>
-          <p>A student is comparing the boiling points of ethanol, ethanal and ethanoic acid, trying to decide which boils at
+          <fieldset name="question-5">
+          <legend>A student is comparing the boiling points of ethanol, ethanal and ethanoic acid, trying to decide which boils at
             the highest temperature and which at the lowest. They write the following notes. Tick all of the statements that
             are correct.
-          </p>
+          </legend>
           
-          <p>[INSERT IMAGES OF ETHANOL, ETHANAL AND ETHANOIC ACID]</p>
+          <div class="row">
+            <div class="col-md-4 d-flex flex-column justify-content-between">
+              <div>
+                <img class="img-fluid" src="../images/resources/y13-health-check/ethanol.png">
+              </div>
+              <p>Ethanol</p>
+            </div>
+            <div class="col-md-4 d-flex flex-column justify-content-between mx-auto">
+              <div>
+                <img class="img-fluid w-75" src="../images/resources/y13-health-check/ethanal.png">
+              </div>
+              <p>Ethanal</p>
+            </div>
+            <div class="col-md-4 d-flex flex-column justify-content-between">
+              <div>
+                <img class="img-fluid" src="../images/resources/y13-health-check/ethanoic acid.png">
+              </div>
+              <p>Ethanoic acid</p>
+            </div>
+          </div>
           
                 
         
         <!--Question 5 options-->
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q5-option1" name="Q5-selected">
-            <label class="form-check-label" for="Q5-option1">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="Ethanoic acid has a double C=O bond which increases the boiling point because it takes more energy to break" id="Q5-option1" name="question-5">
               Ethanoic acid has a double C=O bond which increases the boiling point because it takes more energy to break.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q5-option2" name="Q5-selected">
-            <label class="form-check-label" for="Q5-option2">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="Ethanal has the weakest Van der Waals forces" id="Q5-option2" name="question-5">
               Ethanal has the weakest Van der Waals forces.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q5-option3" name="Q5-selected">
-            <label class="form-check-label" for="Q5-option3">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="Molecules of all three compounds experience hydrogen bonding" id="Q5-option3" name="question-5">
               Molecules of all three compounds experience hydrogen bonding.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q5-option4" name="Q5-selected">
-            <label class="form-check-label" for="Q5-option4">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="Molecules of ethanoic acid experience permanent dipole permanent dipole interactions, which increase its boiling point" id="Q5-option4" name="question-5">
               Molecules of ethanoic acid experience permanent dipole permanent dipole interactions, which increase its boiling point.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q5-option5" name="Q5-selected">
-            <label class="form-check-label" for="Q5-option5">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="The covalent O−H bond in ethanol is a hydrogen bond" id="Q5-option5" name="question-5">
               The covalent O−H bond in ethanol is a hydrogen bond.
             </label>
           </div>
+        </fieldset>
         </div>
           <!--Question 5 ends-->
 
           <!--Question 6 begins with question-->
           <div class="form-group my-5">
             <h2>Question 6</h2>
-            <p>This question is about redox reactions. Select the correct statement.</p>
+            <fieldset name="question-6">
+            <legend>This question is about redox reactions. Select the correct statement.</legend>
             
             <p>2MnO<sub>4</sub><sup>−</sup><sub>(aq)</sub> + 5H<sub>2</sub>O<sub>2(aq)</sub> + 6H<sup>+</sup><sub>(aq)</sub> &#8594; 2Mn<sup>2+</sup><sub>(aq)</sub> + 5O<sub>2(g)</sub> + 8H<sub>2</sub>O<sub>(l))</sub>   </p> 
             <p>MnO<sub>4</sub><sup>−</sup> is...</p>
             
           <!--Question 6 options-->
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q6-selected" id="Q6-option1">
-            <label class="form-check-label" for="Q6-option1">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="the oxidising agent because it donates electrons" name="question-6" id="Q6-option1">
               ...the oxidising agent because it gains electrons.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q6-selected" id="Q6-option2">
-            <label class="form-check-label" for="Q6-option2">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="the oxidising agent because it donates electrons" name="question-6" id="Q6-option2">
               ...the oxidising agent because it donates electrons.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q6-selected" id="Q6-option3">
-            <label class="form-check-label" for="Q6-option3">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="the reducing agent because it gains electrons" name="question-6" id="Q6-option3">
               ...the reducing agent because it gains electrons.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q6-selected" id="Q6-option4">
-            <label class="form-check-label" for="Q6-option4">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="the reducing agent because it donates electrons" name="question-6" id="Q6-option4">
               ...the reducing agent because it donates electrons.
             </label>
           </div>
+        </fieldset>
 
           </div>
           <!--Question 6 ends-->
@@ -356,36 +442,42 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 7 begins with question-->
         <div class="form-group my-5">
           <h2>Question 7</h2>
-          <p>This question is about silicon dioxide. Tick all the correct statements. SiO<sub>2</sub> has a high melting because... 
-          </p>
+          <fieldset name="question-7">
+          <legend>This question is about silicon dioxide. Tick all the correct statements. SiO<sub>2</sub> has a high melting because... 
+          </legend>
           
                 
         
         <!--Question 7 options-->
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q7-option1" name="Q7-selected">
-            <label class="form-check-label" for="Q7-option1">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="it has strong intermolecular forces" id="Q7-option1" name="question-7">
               ...it has strong intermolecular forces.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q7-option2" name="Q7-selected">
-            <label class="form-check-label" for="Q7-option2">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="its atoms have full outer shells" id="Q7-option2" name="question-7">
               ...its atoms have full outer shells.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q7-option3" name="Q7-selected">
-            <label class="form-check-label" for="Q7-option3">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="it has strong forces of attraction between shared pairs of electrons and positive nuclei" id="Q7-option3" name="question-7">
               ...it has strong forces of attraction between shared pairs of electrons and positive nuclei.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q7-option4" name="Q7-selected">
-            <label class="form-check-label" for="Q7-option4">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="it has a giant lattice structure" id="Q7-option4" name="question-7">
               ...it has a giant lattice structure.
             </label>
           </div>
+        </fieldset>
           
         </div>
           <!--Question 7 ends-->
@@ -393,37 +485,45 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 8 begins with question-->
           <div class="form-group my-5">
             <h2>Question 8</h2>
-            <p>This question is about reactions of alcohols. The diagram shows the display formula of butan-1,3-diol. The compound 
+            <fieldset name="question-8">
+            <legend>This question is about reactions of alcohols. The diagram shows the display formula of butan-1,3-diol. The compound 
               is refluxed with excess acidified potassium dichromate. Select the main product.
-            </p>
+            </legend>
             
-            <p>INSERT DIAGRAM OF BUTAN-1,3-DIOL</p>
+            <div class=" my-5">
+              <img class="w-50 img-fluid" src="../images/resources/y13-health-check/butan-1,3-diol.png" >
+            </div>
             
           <!--Question 8 options-->
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q8-selected" id="Q8-option1">
-            <label class="form-check-label" for="Q8-option1">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="CH3CH(OH)CH2CHO" name="question-8" id="Q8-option1">
               CH<sub>3</sub>CH(OH)CH<sub>2</sub>CHO
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q8-selected" id="Q8-option2">
-            <label class="form-check-label" for="Q8-option2">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="CH3CH(OH)CH2COOH" name="question-8" id="Q8-option2">
               CH<sub>3</sub>CH(OH)CH<sub>2</sub>COOH
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q8-selected" id="Q8-option3">
-            <label class="form-check-label" for="Q8-option3">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="CH3COCH2CHO" name="question-8" id="Q8-option3">
               CH<sub>3</sub>COCH<sub>2</sub>CHO
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q8-selected" id="Q8-option4">
-            <label class="form-check-label" for="Q8-option4">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="CH3COCH2COOH" name="question-8" id="Q8-option4">
               CH<sub>3</sub>COCH<sub>2</sub>COOH
             </label>
           </div>
+        </fieldset>
 
           </div>
           <!--Question 8 ends-->
@@ -431,48 +531,75 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 9 begins with question-->
         <div class="form-group my-5">
           <h2>Question 9</h2>
-          <p>This question is about polar molecules. Tick all the statements that correctly describe the compounds shown in the diagrams.
-          </p>
-          <p>[INSERT IMAGES OF CH4, CCL2F2, CF4]</p>
+          <fieldset name="question-9">
+          <legend>This question is about polar molecules. Tick all the statements that correctly describe the compounds shown in the diagrams.
+          </legend>
+          <div class="row">
+            <div class="col-md-4 d-flex flex-column justify-content-between">
+              <div>
+                <img class="img-fluid" src="../images/resources/y13-health-check/q9-methane.png">
+              </div>
+              <p>A</p>
+            </div>
+            <div class="col-md-4 d-flex flex-column justify-content-between mx-auto">
+              <div>
+                <img class="img-fluid" src="../images/resources/y13-health-check/dichloro-difluoromethane.png">
+              </div>
+              <p>B</p>
+            </div>
+            <div class="col-md-4 d-flex flex-column justify-content-between">
+              <div>
+                <img class="img-fluid" src="../images/resources/y13-health-check/tetrafluoromethane.png">
+              </div>
+              <p>C</p>
+            </div>
+          </div>
                 
         
         <!--Question 9 options-->
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q9-option1" name="Q9-selected">
-            <label class="form-check-label" for="Q9-option1">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="Molecules B and C contain polar bonds" id="Q9-option1" name="question-9">
               Molecules B and C contain polar bonds.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q9-option2" name="Q9-selected">
-            <label class="form-check-label" for="Q9-option2">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="In C the dipoles cancel out" id="Q9-option2" name="question-9">
               In C the dipoles cancel out.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q9-option3" name="Q9-selected">
-            <label class="form-check-label" for="Q9-option3">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="A is non-polar" id="Q9-option3" name="question-9">
               A is non-polar.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q9-option4" name="Q9-selected">
-            <label class="form-check-label" for="Q9-option4">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="Molecules B and C are polar" id="Q9-option4" name="question-9">
               Molecules B and C are polar.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q9-option5" name="Q9-selected">
-            <label class="form-check-label" for="Q9-option5">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="The C−Cl bond is polar because chlorine is significantly more electronegative than carbon" id="Q9-option5" name="question-9">
               The C−Cl bond is polar because chlorine is significantly more electronegative than carbon.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Q9-option6" name="Q9-selected">
-            <label class="form-check-label" for="Q9-option6">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="All three molecules are asymmetrical" id="Q9-option6" name="question-9">
               All three molecules are asymmetrical.
             </label>
           </div>
+        </fieldset>
           
         </div>
           <!--Question 9 ends-->
@@ -480,33 +607,44 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 10 begins with question-->
           <div class="form-group my-5">
             <h2>Question 10</h2>
-            <p>This question is about titration. [INSERT ACID BASE TITRATION QUESTION]
+            <fieldset name="question-10">
+            <legend>This question is about titration. A student prepared 250 cm<sup>3</sup> of a solution of NaOH. The student fills a burette 
+              with this solution. Next the student adds 25.0 cm<sup>3</sup> of H<sub>2</sub>SO<sub>4</sub> with a concentration of 
+              0.060 mol dm<sup>-3</sup> to a conical flask. The average titre was 28.2cm<sup>3</sup>. Calculate what mass of NaOH was dissolved 
+              to make up the original 250cm<sup>3</sup> solution.
+            </legend>
+            <p>H<sub>2</sub>SO<sub>4</sub>  +  2NaOH  &#8594;  Na<sub>2</sub>SO<sub>4</sub>  + 2H<sub>2</sub>O</p>
             
           <!--Question 10 options-->
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option1">
-            <label class="form-check-label" for="Q10-option1">
-              [INSERT ANSWER WHICH OVERLOOKS STOICHIOMETRY]
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="[INSERT ANSWER WHICH OVERLOOKS STOICHIOMETRY]" name="question-10" id="Q10-option1">
+              1.06g
+            </label>
+          </div>
+          <div class="form-check">            
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="[INSERT ANSWER WHICH PUTS WRONG SOLUTION IN BURETTE]" name="question-10" id="Q10-option2">
+              1.20g
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option2">
-            <label class="form-check-label" for="Q10-option2">
-              [INSERT ANSWER WHICH PUTS WRONG SOLUTION IN BURETTE]
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="[INSERT ANSWER WHICH OVERLOOKS OVERLOOKS THE NEED TO SCALE UP]" name="question-10" id="Q10-option3">
+              0.120g
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option3">
-            <label class="form-check-label" for="Q10-option3">
-              [INSERT CORRECT ANSWER]
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="[INSERT CORRECT ANSWER]" name="question-10" id="Q10-option4">
+              0.266g
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q10-selected" id="Q10-option4">
-            <label class="form-check-label" for="Q10-option4">
-              [INSERT ANSWER WHICH OVERLOOKS OVERLOOKS THE NEED TO SCALE UP]
-            </label>
-          </div>
+        </fieldset>
 
           </div>
           <!--Question 10 ends-->
@@ -514,36 +652,47 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <!--Question 11 begins with question-->
           <div class="form-group my-5">
             <h2>Question 11</h2>
-            <p>This question is about naming organic compounds. Select the correct name for the compound shown in the diagram.</p>
-            <p>[INSERT IMAGE OF 2,4-DIMETHYLHEXANE]</p>
+            <fieldset name="question-11">
+            <legend>This question is about naming organic compounds. Select the correct name for the compound shown in the diagram.</legend>
+            <div class=" my-5">
+              <img class="w-50 img-fluid" src="../images/resources/y13-health-check/q11-branched-alkane.png" >
+            </div>
             
           <!--Question 11 options-->
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q11-selected" id="Q11-option1">
-            <label class="form-check-label" for="Q11-option1">
+           
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="2-methyl-4-ethylpentane" name="question-11" id="Q11-option1">
               2-methyl-4-ethylpentane
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q11-selected" id="Q11-option2">
-            <label class="form-check-label" for="Q11-option2">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="2-ethyl-4-methylpentane" name="question-11" id="Q11-option2">
               2-ethyl-4-methylpentane
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q11-selected" id="Q11-option3">
-            <label class="form-check-label" for="Q11-option3">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="2,4-dimethylhexane" name="question-11" id="Q11-option3">
               2,4-dimethylhexane
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Q11-selected" id="Q11-option4">
-            <label class="form-check-label" for="Q11-option4">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="3,5-dimethylhexane" name="question-11" id="Q11-option4">
               3,5-dimethylhexane
             </label>
           </div>
+        </fieldset>
 
           </div>
+          <!--Question 11 ends-->
+
+
           <!--Question 11 ends-->
 
         <div class="form-group my-1">
@@ -676,6 +825,53 @@ function recheckSelectedAnswers(object){
 }
 
 recheckSelectedAnswers(selectedAnswers);
+
+//This function, used by the one below, puts a red box around incorrect answers and a yellow box around correct answers
+
+function decoration(id, boolean){
+    element = document.getElementById(id);
+    element.style.padding = "15px";
+    if (boolean){
+        element.style.border = "3px solid yellow";
+    } else {
+        element.style.border = "3px solid red";
+    }
+}
+
+//This function compares the selected answers to the correct answers
+
+function checkAnswers(selectedAnswers){
+    for (let d=1; d<12; d++){        
+        if (typeof selectedAnswers[d] === 'object'){
+            if (selectedAnswers[d].length !== correctAnswers[d].length){
+                
+                decoration(`question-${d}`, false);
+            } else {
+                let booleanArray = [];
+                for (let e=0; e<selectedAnswers[d].length; e++){
+                    if (selectedAnswers[d][e] !== correctAnswers[d][e]){
+                        booleanArray.push('false');                        
+                    } else {
+                        booleanArray.push('true');                        
+                    }                     
+                }
+                if (booleanArray.every((g) => g !== 'false')){
+                    decoration(`question-${d}`, true);
+                } else {
+                    decoration(`question-${d}`, false);
+                }
+            }
+        } else {
+            if (correctAnswers[d] === selectedAnswers[d]){                
+                decoration(`question-${d}`, true);
+            } else {                
+                decoration(`question-${d}`, false);
+            }
+        }
+        }        
+    }
+
+
 
       </script>
   </body>

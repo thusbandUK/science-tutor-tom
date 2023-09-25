@@ -204,6 +204,13 @@ li {
   color: black !important;
 }
 
+/*table styling*/
+
+tbody, td, tfoot, th, thead, tr {
+  border-color: black;
+}
+
+
 /* This was here with a wiggly underlining, suspicious   }     */
 
 /*Media query for larger screens*/
