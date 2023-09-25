@@ -1,6 +1,4 @@
-you need to give each question-containing div an id of the form id="question-x" - make sure it matches the id passed to 
-decoration function in terms of lower / upper case q and the use of a dash, then restore the code in decoration function 
-that decorates
+For the titration and hess cycle questions, you need to update the values for the inputs in both files
 
 Okay, so when you've finished all the question content in the health check page you then need to copy that over to the submission
 accepted page - BUT DON'T MESS WITH THE JAVASCRIPT CODE 
@@ -17,6 +15,10 @@ object, key value by key value
 
 
 done 
+
+you need to give each question-containing div an id of the form id="question-x" - make sure it matches the id passed to 
+decoration function in terms of lower / upper case q and the use of a dash, then restore the code in decoration function 
+that decorates
 
 and you need to adjust the code so that the netlify submission actually gets the data 
 

@@ -695,7 +695,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
 
           <!--Question 11 ends-->
-
+<!--
         <div class="form-group my-1">
          <label for="name">Name</label>
          <input type="name" class="form-control" id="name" placeholder="Name" name="name">
@@ -705,21 +705,52 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email">
          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
        </div>
-       <!-- So what this is is a working regex expression that validates postcodes (more or less). Not sure whether or not to use
-       <div class="form-group my-1">hello
-         <label for="postcode">Postcode</label>
-         <input type="postcode" class="form-control" id="email" placeholder="Enter postcode" name="postcode" required pattern="^(([A-Z][0-9]{1,2})|(([A-Z][A-HJ-Y][0-9]{1,2})|(([A-Z][0-9][A-Z])|([A-Z][A-HJ-Y][0-9]?[A-Z])))) [0-9][A-Z]{2}$">
-         <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>--><!--
-       </div>
-     -->
+       
        
        <div class="form-group my-1">
          <label for="inquiry">Your inquiry. Feel free to include time(s) you would like tutoring</label>
          <textarea class="form-control" id="inquiry" rows="3" name="inquiry"></textarea>
        </div>
        <div class="w-100" data-netlify-recaptcha="true"></div>
-       <button type="submit" class="btn btn-lg btn-default">Submit</button>
+       <button type="submit" class="btn btn-lg btn-default">Submit</button>-->
      </form>
+     <div id="feedback">
+      <div id="strengths">
+        <p>You're doing really well with these skills:</p>
+        <ul>
+          <li id="question-1-positive-feedback"></li>
+          <li id="question-2-positive-feedback"></li>
+          <li id="question-3-positive-feedback"></li>
+          <li id="question-4-positive-feedback"></li>
+          <li id="question-5-positive-feedback"></li>
+          <li id="question-6-positive-feedback"></li>
+          <li id="question-7-positive-feedback"></li>
+          <li id="question-8-positive-feedback"></li>
+          <li id="question-9-positive-feedback"></li>
+          <li id="question-10-positive-feedback"></li>
+          <li id="question-11-positive-feedback"></li>
+        </ul>
+
+      </div>
+      <div id="weaknesses">
+        <p>You need more practice with these skills:</p>
+        <ul>
+          <li id="question-1-negative-feedback"></li>
+          <li id="question-2-negative-feedback"></li>
+          <li id="question-3-negative-feedback"></li>
+          <li id="question-4-negative-feedback"></li>
+          <li id="question-5-negative-feedback"></li>
+          <li id="question-6-negative-feedback"></li>
+          <li id="question-7-negative-feedback"></li>
+          <li id="question-8-negative-feedback"></li>
+          <li id="question-9-negative-feedback"></li>
+          <li id="question-10-negative-feedback"></li>
+          <li id="question-11-negative-feedback"></li>
+        </ul>
+
+      </div>
+
+     </div>
     </div>
  </div>
 
@@ -773,7 +804,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
       <script>
-        console.log('So hopefully now it will check selected answers and disable all boxes');
+        //console.log('So hopefully now it will check selected answers and disable all boxes');
        
         const selectedAnswers = JSON.parse(localStorage.harvestedData);
 
@@ -843,6 +874,8 @@ const correctAnswers = {
     11: 'Q11-option3' //correct
 };
 
+
+
 //This function, used by the one below, puts a red box around incorrect answers and a yellow box around correct answers
 
 function decoration(id, boolean){
@@ -859,6 +892,37 @@ function decoration(id, boolean){
     }
 }
 
+//This function organises feedback
+
+const comments = {
+  "question-1": "the meaning of ionic bonding and or understanding of the structure",
+  "question-2": "how chemical equilibria respond to changes in temperature",
+  "question-3": "how organic reaction mechanisms work",
+  "question-4": "calculating enthalpy values using Hess cycles",
+  "question-5": "identifying intermolecular forces and reasoning about how they affect boiling points",
+  "question-6": "identifying oxidising agents and reducing agents",
+  "question-7": "reasoning about covalent bonding and its role in the melting point of giant covalent substances",
+  "question-8": "oxidation of alcohols and or understanding that more than one part of a molecule may react in the same reaction",
+  "question-9": "identifying polar molecules and correctly justifying choices",
+  "question-10": "titration calculations",
+  "question-11": "naming organic compounds"
+}
+
+function feedback(id, boolean){
+  if (boolean){
+    document.getElementById(`${id}-positive-feedback`).innerHTML = comments[id];
+  } else {
+    document.getElementById(`${id}-negative-feedback`).innerHTML = comments[id];
+  }
+}
+
+//This function compiles correct and incorrect answers and then calls decoration and feedback functions
+
+function compile(id, boolean){
+  decoration(id, boolean);
+  feedback(id, boolean);
+}
+
 //This function compares the selected answers to the correct answers
 
 function checkAnswers(selectedAnswers){
@@ -866,7 +930,7 @@ function checkAnswers(selectedAnswers){
         if (typeof selectedAnswers[d] === 'object'){
             if (selectedAnswers[d].length !== correctAnswers[d].length){
                 
-                decoration(`question-${d}`, false);
+                compile(`question-${d}`, false);
             } else {
                 let booleanArray = [];
                 for (let e=0; e<selectedAnswers[d].length; e++){
@@ -877,16 +941,16 @@ function checkAnswers(selectedAnswers){
                     }                     
                 }
                 if (booleanArray.every((g) => g !== 'false')){
-                    decoration(`question-${d}`, true);
+                  compile(`question-${d}`, true);
                 } else {
-                    decoration(`question-${d}`, false);
+                  compile(`question-${d}`, false);
                 }
             }
         } else {
             if (correctAnswers[d] === selectedAnswers[d]){                
-                decoration(`question-${d}`, true);
+              compile(`question-${d}`, true);
             } else {                
-                decoration(`question-${d}`, false);
+              compile(`question-${d}`, false);
             }
         }
         }        
