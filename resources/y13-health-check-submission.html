@@ -846,11 +846,19 @@ const correctAnswers = {
 
 function decoration(id, boolean){
     element = document.getElementById(id);
-    element.style.padding = "15px";
-    if (boolean){
-        element.style.border = "3px solid yellow";
+    console.log(element);
+    if (!element.style){
+      console.log('this element has no style?');
     } else {
-        element.style.border = "3px solid red";
+      console.log('this element do have style');
+    }
+    //element.style.padding = "15px";
+    if (boolean){
+        //element.style.border = "3px solid yellow";
+        console.log(`${id} is correct`);
+    } else {
+        //element.style.border = "3px solid red";
+        console.log(`${id} is incorrect`);
     }
 }
 
