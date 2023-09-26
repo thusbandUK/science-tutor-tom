@@ -109,7 +109,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 <div class="section">
     
 <div class="text-box" >
-  <h1 class="text-center text-wrap w-75 m-auto mt-0">A-level chemistry health check for year 13 students
+  <h1 class="text-center text-wrap w-75 m-auto mt-0 fs-1 mt-5">A-level chemistry health check for year 13 students
   </h1>
 </div>
 
@@ -786,9 +786,18 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
        <div class="w-100" data-netlify-recaptcha="true"></div>
        <button type="submit" class="btn btn-lg btn-default">Submit</button>-->
      </form>
+     <div id="identifier-code-section">
+      <h3>Your identifier code</h3>
+      <div  style="display: inline">
+        <p style="display: inline">Code: </p>
+        <p style="display: inline" id="identifier-code"></p>
+      </div>
+      <p>Please make a note if this code if you wish to discuss these results with Science Tutor Tom.</p>
+
+     </div>
      <div id="feedback">
       <div id="strengths">
-        <p>You're doing really well with these skills:</p>
+        <h3>You're doing really well with these skills:</h3>
         <ul>
           <li id="question-1-positive-feedback"></li>
           <li id="question-2-positive-feedback"></li>
@@ -805,7 +814,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
       </div>
       <div id="weaknesses">
-        <p>You need more practice with these skills:</p>
+        <h3>You need more practice with these skills:</h3>
         <ul>
           <li id="question-1-negative-feedback"></li>
           <li id="question-2-negative-feedback"></li>
@@ -879,8 +888,9 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
         //console.log('So hopefully now it will check selected answers and disable all boxes');
        
         const selectedAnswers = JSON.parse(localStorage.harvestedData);
-        const code = localStorage.identifierCode;
-        console.log(`idenifier code: ${code}`);
+        const code = localStorage.identifierCode ? localStorage.identifierCode : "Error: Code not logged";
+        console.log(`identifier code: ${code}`);
+        document.getElementById("identifier-code").innerHTML = code;
 
         function disableChecksAndRadios(){
 
