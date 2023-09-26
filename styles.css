@@ -156,6 +156,63 @@ li {
   aspect-ratio: 16/9;
 }
 
+/*Styling for the Bootstrap cards used as menu headings for blog posts / resources */
+
+.menu-card-body {
+  background-color: var(--tan);
+  /*color: var(--brown);*/
+}
+/*
+.whole-menu-link {
+  text-decoration: none;
+  border:3px solid transparent;
+}
+
+.whole-menu-link:hover {
+  border-radius:5px;
+  border:3px solid var(--red);
+}
+*/
+.menu-card-body a {
+  text-decoration: none;
+  /*border:3px solid transparent;*/
+}
+
+.menu-card-body {
+  /*border: 3px solid var(--lightGrey);*/
+  border: 3px solid black;
+  
+}
+
+.menu-card-body:hover {
+  border: 3px solid var(--red);
+  
+}
+/*
+.menu-card-body a:hover{
+  /*background-color:#D0DDF2;*//*
+  border-radius:5px;
+  border:3px solid var(--red);
+}
+*/
+
+.menu-card-body h5, .menu-card-body  {
+  color: var(--brown);
+}
+
+.menu-card-body small.text-muted {
+  color: black !important;
+}
+
+/*table styling*/
+
+tbody, td, tfoot, th, thead, tr {
+  border-color: black;
+}
+
+
+/* This was here with a wiggly underlining, suspicious   }     */
+
 /*Media query for larger screens*/
 
 @media screen and (min-width: 992px) {

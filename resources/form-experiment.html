@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+<form id="form">
+    <input id="input-1" type="text" name="text1" value="ah" />
+    <input type="text" name="text2" value="I" />
+    <input type="text" name="text2" value="see" />
+    <input type="checkbox" name="check" checked disabled />
+    <button name="intent" value="save">Save</button>
+    <button name="intent" value="saveAsCopy">Save As Copy</button>
+  </form>
+  
+  <output id="output"></output>
+
+  <script>
+    const form = document.getElementById("form");
+const submitter = document.querySelector("button[value=save]");
+const formData = new FormData(form, submitter);
+
+const output = document.getElementById("output");
+
+for (const [key, value] of formData) {
+  output.textContent += `${key}: ${value}\n`;
+}
+
+//console.log(formData);
+
+var x = document.getElementById("mySubmit").formTarget;
+
+console.log(x);
+  </script>
+
+</body>
+
+  </html>
