@@ -1,3 +1,6 @@
+configure health check contact form to only appear if there were no params, make usre it works, sends hidden code
+connected to anonymised data, rejig intro text on intro page
+
 so your other option is to call the anonymised code as the placeholder, no that won't work either, i think you really
 just need to wait for them to get back to you
 
