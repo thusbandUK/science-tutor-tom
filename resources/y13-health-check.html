@@ -117,7 +117,14 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
     <div>
       <!-- -->
      <form id="form" name="y13-health-check" method="POST" action="/resources/y13-health-check-submission.html" data-netlify="true" data-netlify-recaptcha="true" content-Type="application/x-www-form-urlencoded">
-        <!--Question 1 begins with question-->
+        
+      <div class="form-group my-1">
+        <label>Identifier
+          <input type="text" class="form-control" id="identifier" placeholder="Identification code" name="identifier">
+        </label>
+      </div>
+      
+      <!--Question 1 begins with question-->
         <div class="form-group my-5" id="question-1">
           
           <h2>Question 1</h2>
@@ -293,28 +300,28 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <div class="form-check">
             
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" value="[REPLACE THIS TEXT WITH HESS CYCLE OPTION]" name="question-4" id="Q4-option1">
+              <input class="form-check-input" type="radio" value="+84.9 kJ/mol incorrect subtotals summed backwards" name="question-4" id="Q4-option1">
               +84.9 kJmol<sup>-1</sup> 
             </label>
           </div>
           <div class="form-check">
             
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" value="[REPLACE THIS TEXT WITH HESS CYCLE OPTION]" name="question-4" id="Q4-option2">
+              <input class="form-check-input" type="radio" value="–84.9kJ/mol correct" name="question-4" id="Q4-option2">
               –84.9kJmol<sup>-1</sup> 
             </label>
           </div>
           <div class="form-check">
             
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" value="[REPLACE THIS TEXT WITH HESS CYCLE OPTION]" name="question-4" id="Q4-option3">
+              <input class="form-check-input" type="radio" value="+880.4kJ/mol subtotals no coefficients" name="question-4" id="Q4-option3">
               +880.4kJmol<sup>-1</sup> 
             </label>
           </div>
           <div class="form-check">
             
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" value="[REPLACE THIS TEXT WITH HESS CYCLE OPTION]" name="question-4" id="Q4-option4">
+              <input class="form-check-input" type="radio" value="–880.4kJmol subtotals no coefficients" name="question-4" id="Q4-option4">
               –880.4kJmol<sup>-1</sup> 
             </label>
           </div>
@@ -618,28 +625,28 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
           <div class="form-check">
             
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" value="[INSERT ANSWER WHICH OVERLOOKS STOICHIOMETRY]" name="question-10" id="Q10-option1">
+              <input class="form-check-input" type="radio" value="1.06g - correct answer" name="question-10" id="Q10-option1">
               1.06g
             </label>
           </div>
           <div class="form-check">            
             
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" value="[INSERT ANSWER WHICH PUTS WRONG SOLUTION IN BURETTE]" name="question-10" id="Q10-option2">
+              <input class="form-check-input" type="radio" value="1.20g wrong solution in burette" name="question-10" id="Q10-option2">
               1.20g
             </label>
           </div>
           <div class="form-check">
             
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" value="[INSERT ANSWER WHICH OVERLOOKS OVERLOOKS THE NEED TO SCALE UP]" name="question-10" id="Q10-option3">
+              <input class="form-check-input" type="radio" value="0.120g no scaling up" name="question-10" id="Q10-option3">
               0.120g
             </label>
           </div>
           <div class="form-check">
             
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" value="[INSERT CORRECT ANSWER]" name="question-10" id="Q10-option4">
+              <input class="form-check-input" type="radio" value="0.266g moles of sulfuric acid halved instead of doubled" name="question-10" id="Q10-option4">
               0.266g
             </label>
           </div>
@@ -690,7 +697,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
 
           </div>
           <!--Question 11 ends-->
-
+<!--
         <div class="form-group my-1">
          <label for="name">Name</label>
          <input type="name" class="form-control" id="name" placeholder="Name" name="name">
@@ -706,12 +713,12 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
          <input type="postcode" class="form-control" id="email" placeholder="Enter postcode" name="postcode" required pattern="^(([A-Z][0-9]{1,2})|(([A-Z][A-HJ-Y][0-9]{1,2})|(([A-Z][0-9][A-Z])|([A-Z][A-HJ-Y][0-9]?[A-Z])))) [0-9][A-Z]{2}$">
          <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>--><!--
        </div>
-     -->
+     
        
        <div class="form-group my-1">
          <label for="inquiry">Your inquiry. Feel free to include time(s) you would like tutoring</label>
          <textarea class="form-control" id="inquiry" rows="3" name="inquiry"></textarea>
-       </div>
+       </div>-->
        <div class="w-100" data-netlify-recaptcha="true"></div>
        <button type="submit" class="btn btn-lg btn-default" value="form-submit">Submit</button>
      </form>
@@ -772,51 +779,24 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
       <script>
 
-console.log("hopefully gives a feedback list below");
-/*
-const arrayRadio = [2,3,4,6,8,10,11];
-//const arrayRadio = [2];
-const arrayCheck = [1,5,7,9];
-//const arrayCheck = [1];
+console.log("should have id code");
 
-let object = {1: "I actually don't care about numbers", 2: "", 3: "", 4: "", 5: "I actually don't care about numbers"};
+//autopopulates and disables identifier form field if provided via url query
 
-const radioHarvest = (inputArray) => {
-    inputArray.forEach((x) => {
-        var selectedRadio = document.querySelectorAll(`input[name=Q${x}-selected]:checked`);
-        return object[x] = selectedRadio;
-    })
+var url_string = window.location.href;
+var url = new URL(url_string);
+var c = url.searchParams.get("identifier");
+if (c){
+    document.getElementById('identifier').value = c;
+    document.getElementById('identifier').disabled = true;    
 }
 
-const checkHarvest = (inputArray) => {
-    inputArray.forEach((y) => {
-        var selectedCheck = document.querySelectorAll(`input[name=Q${y}-selected]:checked`);
-        return object[y] = selectedCheck;
-    })
-}
-
-radioHarvest(arrayRadio);
-checkHarvest(arrayCheck);
-/*
-console.log(object);
-
-const objectBuilder = (inputArray) => {
-    inputArray.forEach((x) => {
-        return object[x] = `I am number ${x.toString()}`;
-
-    })
-
-}
-
-console.log(object);
-
-objectBuilder(arrayRadio);
-*/
+//console.log(c);
 
 const arrayRadio = [2,3,4,6,8,10,11];
-//const arrayRadio = [2];
+
 const arrayCheck = [1,5,7,9];
-//const arrayCheck = [1];
+
 
 let object = {1: "I actually don't care about numbers", 2: "", 3: "", 4: "", 5: "I actually don't care about numbers"};
 
@@ -843,10 +823,30 @@ const checkHarvest = (inputArray) => {
     })
 }
 
+//generates six-letter caps code if none entered
+function generateSixLetterCode(){
+    const alphabet  = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    let nascentCode = [];
+    for (let j=0; j<6; j++){
+        let randomNumber = Math.floor(Math.random()*26);
+        nascentCode.push(alphabet[randomNumber]);
+    }
+    return nascentCode.join("");
+}
+
+//produces a code to be submitted with the form, either harvested input code from query params / user input or uses above auto generater function
+function findCode(){
+  let inputCode = document.getElementById("identifier").value;
+  if (!inputCode){
+    generateSixLetterCode();
+  }
+}
+
 addEventListener("submit", (event) => {
   radioHarvest(arrayRadio);
 checkHarvest(arrayCheck);
 localStorage.setItem("harvestedData", JSON.stringify(object));
+localStorage.setItem("identifierCode", findCode());
         
        });
 

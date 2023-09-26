@@ -292,6 +292,41 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
             </table>
             
           <!--Question 4 options-->
+          <!--Question 4 options-->
+          <div class="form-check">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="+84.9 kJ/mol incorrect subtotals summed backwards" name="question-4" id="Q4-option1">
+              +84.9 kJmol<sup>-1</sup> 
+            </label>
+          </div>
+          <div class="form-check">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="–84.9kJ/mol correct" name="question-4" id="Q4-option2">
+              –84.9kJmol<sup>-1</sup> 
+            </label>
+          </div>
+          <div class="form-check">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="+880.4kJ/mol subtotals no coefficients" name="question-4" id="Q4-option3">
+              +880.4kJmol<sup>-1</sup> 
+            </label>
+          </div>
+          <div class="form-check">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="–880.4kJmol subtotals no coefficients" name="question-4" id="Q4-option4">
+              –880.4kJmol<sup>-1</sup> 
+            </label>
+          </div>
+
+
+
+
+
+          <!--
           <div class="form-check">
             
             <label class="form-check-label">
@@ -319,7 +354,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
               <input class="form-check-input" type="radio" value="[REPLACE THIS TEXT WITH HESS CYCLE OPTION]" name="question-4" id="Q4-option4">
               –880.4kJmol<sup>-1</sup> 
             </label>
-          </div>
+          </div>-->
         </fieldset>
 
           </div>
@@ -617,6 +652,43 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
             <p>H<sub>2</sub>SO<sub>4</sub>  +  2NaOH  &#8594;  Na<sub>2</sub>SO<sub>4</sub>  + 2H<sub>2</sub>O</p>
             
           <!--Question 10 options-->
+          <!--Question 10 options-->
+          <div class="form-check">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="1.06g - correct answer" name="question-10" id="Q10-option1">
+              1.06g
+            </label>
+          </div>
+          <div class="form-check">            
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="1.20g wrong solution in burette" name="question-10" id="Q10-option2">
+              1.20g
+            </label>
+          </div>
+          <div class="form-check">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="0.120g no scaling up" name="question-10" id="Q10-option3">
+              0.120g
+            </label>
+          </div>
+          <div class="form-check">
+            
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" value="0.266g moles of sulfuric acid halved instead of doubled" name="question-10" id="Q10-option4">
+              0.266g
+            </label>
+          </div>
+
+
+
+
+
+
+
+          <!--
           <div class="form-check">
             
             <label class="form-check-label">
@@ -644,7 +716,7 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
               <input class="form-check-input" type="radio" value="[INSERT CORRECT ANSWER]" name="question-10" id="Q10-option4">
               0.266g
             </label>
-          </div>
+          </div>-->
         </fieldset>
 
           </div>
@@ -807,6 +879,8 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
         //console.log('So hopefully now it will check selected answers and disable all boxes');
        
         const selectedAnswers = JSON.parse(localStorage.harvestedData);
+        const code = localStorage.identifierCode;
+        console.log(`idenifier code: ${code}`);
 
         function disableChecksAndRadios(){
 
